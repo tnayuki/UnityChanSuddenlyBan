@@ -17,7 +17,7 @@ public class UnityChanBan : MonoBehaviour
 		void OnCollisionEnter (Collision collision)
 		{
 				if (collision.gameObject.CompareTag ("Enemy")) {
-						Application.LoadLevel ("Game");
+						Application.LoadLevel ("SuddenlyBan");
 				}
 		}
 }
