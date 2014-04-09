@@ -15,7 +15,6 @@ public class CarEmitter : MonoBehaviour
 		void Update ()
 		{
 				if (GameObject.FindGameObjectsWithTag ("Enemy").Length < Time.timeSinceLevelLoad) {
-
 						GameObject newCar = (GameObject)Instantiate (prefab);
 
 						newCar.transform.position = new Vector3 (Random.Range (-40, 40), 0.8f, Random.Range (-40, 40));
